@@ -1,6 +1,7 @@
 ## My Python exercises
 
-- [Week 1](/w1)
+Inside directories are my solutions for the exercises. Exercises start with letter e followed by the exercise number. Bonus exercises start with letter b followed by exercise number. 
+
 - [Week 2](/w2)
 - [Week 3](/w3)
 - [Week 4](/w4)
