@@ -13,5 +13,12 @@ while True:
   except:
     continue
 
+print("Semipyramid:")
+
 for i in range(rows):
   print(f"{char[0]*(i+1)}")
+
+print("Pyramid:")
+
+for i in range(rows):
+  print(f"{' '*(rows-i-1)}{char[0]*((i+1)*2-1)}")
