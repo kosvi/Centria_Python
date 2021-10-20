@@ -51,8 +51,8 @@ class GUI:
     self.ansEntry.grid(row=0, column=4)
     self.button = Button(master=self.window, text="check", command=self.check_solution)
     self.button.grid(sticky="NE", row=1, column=4)
-    self.REMOVE_THIS = Label(master=self.window, text=self.feedback)
-    self.REMOVE_THIS.grid(row=1, column=0, columnspan=4)
-    self.REMOVE_THIS.after(2000, lambda: self.REMOVE_THIS.config(text=""))
+    self.feedback_label = Label(master=self.window, text=self.feedback)
+    self.feedback_label.grid(row=1, column=0, columnspan=4)
+    self.feedback_label.after(2000, lambda: self.feedback_label.config(text=""))
 
 gui = GUI(task.Task())
