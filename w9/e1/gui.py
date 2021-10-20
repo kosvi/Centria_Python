@@ -55,4 +55,3 @@ class GUI:
     self.feedback_label.grid(row=1, column=0, columnspan=4)
     self.feedback_label.after(2000, lambda: self.feedback_label.config(text=""))
 
-gui = GUI(task.Task())
