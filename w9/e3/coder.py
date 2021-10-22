@@ -1,3 +1,5 @@
+# Source: https://fi.wikipedia.org/wiki/S%C3%A4hk%C3%B6tys
+
 data = {
     'A': '.-',
     'B': '-...',

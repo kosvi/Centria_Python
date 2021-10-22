@@ -18,7 +18,7 @@ class Morse:
         self.to_morse_button = tk.Button(
             self.button_frame, text="Convert to morse", command=self.convert_to_morse)
         self.to_text_button = tk.Button(
-            self.button_frame, text="Convert to text")
+            self.button_frame, text="Convert to text", command=self.convert_to_text)
         self.handle_layout()
 
     # handle layout
@@ -40,6 +40,11 @@ class Morse:
         text = self.read_input()
         morse = coder.text_to_morse(text)
         self.write_to_output(morse)
+
+    def convert_to_text(self):
+        morse = self.read_input()
+        text = coder.morse_to_text(morse)
+        self.write_to_output(text)
 
     # helper functions
     def read_input(self):
