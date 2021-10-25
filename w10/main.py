@@ -5,7 +5,10 @@ import shutil
 
 def main():
   c = C.Countries("countries.txt")
-  # c.overwrite_country("Tuvalu", "1000000")
+  if not c.status:
+    print(c.status_text)
+  # status = c.overwrite_country("Tuvalu", "1000000")
+  # print(status)
   c.print_populations()
   largest = c.find_largest_population()
   print(largest)
