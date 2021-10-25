@@ -8,3 +8,4 @@ Inside directories are my solutions for the exercises. Exercises start with lett
 - [Week 5](/w5)
 - [Week 6](/w6)
 - [Week 9](/w9)
+- [Week 10](/w10)
