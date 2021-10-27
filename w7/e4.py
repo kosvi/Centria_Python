@@ -53,4 +53,18 @@ def main():
       print(e)
 
 if __name__ == "__main__":
+  m = Migratory("Empty", 1)
+  m.country = "Foobar"
+  m.month = 6
+  print(m.get_info())
+  try:
+    m.country = "Foo"
+  except ValueError as e:
+    print(e)
+  try:
+    m.month = 13
+  except ValueError as e:
+    print(e)
+
+  print("\nProgram starts\n")
   main()
