@@ -1,6 +1,3 @@
-from pygame.display import update
-
-
 SIZE = 10
 
 
