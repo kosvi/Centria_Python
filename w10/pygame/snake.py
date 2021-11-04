@@ -34,6 +34,17 @@ class Snake:
             current = current.next
         current.next = Cell(current.x, current.y)
 
+    def set_direction(self, d):
+        if self.direction=="UP" and d=="DOWN":
+            return
+        if self.direction=="DOWN" and d=="UP":
+            return
+        if self.direction=="RIGHT" and d=="LEFT":
+            return
+        if self.direction=="LEFT" and d=="RIGHT":
+            return
+        self.direction = d
+
     def move(self):
         if self.direction=="UP":
             self.move_up()
