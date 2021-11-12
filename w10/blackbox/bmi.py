@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def bmi(w, h):
-  return round(w/(h/100)**2, 2)
+  return round(w/(h/100)**2, 1)
 
 def bmi_to_text(bmi_value):
   if bmi_value<18.5:
